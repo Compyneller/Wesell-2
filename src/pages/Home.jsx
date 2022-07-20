@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Sel />
+      <SellCard />
       <Additional />
       <ThreeStep />
       <StandOut />
