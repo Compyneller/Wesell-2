@@ -1,0 +1,13 @@
+.headerContainer{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerCards{
+    border: none !important;
+    border-radius: 0 !important;
+    height: 100%;
+  
+}
