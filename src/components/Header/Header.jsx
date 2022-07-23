@@ -1,8 +1,8 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import "./Header.css";
-import laptop from "../../assets/laptop.png";
+import laptop from "../../assets/laptop2.png";
 import mobile from "../../assets/smartphone.png";
-import tablet from "../../assets/tablet.png";
+import tablet from "../../assets/tablet2.png";
 import ear from "../../assets/earphones.png";
 
 const Header = () => {
@@ -18,6 +18,7 @@ const Header = () => {
                 backgroundImage:
                   "linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)",
               }}
+              data-aos="zoom-out-right"
             >
               <Card.Body className="d-flex flex-column align-items-center justify-content-center ">
                 <img
@@ -45,6 +46,7 @@ const Header = () => {
                     backgroundImage:
                       "linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%)",
                   }}
+                  data-aos="zoom-out-down"
                 >
                   <Card.Body className="d-flex flex-column align-items-center justify-content-center">
                     <img
@@ -74,6 +76,7 @@ const Header = () => {
                     backgroundImage:
                       "linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%)",
                   }}
+                  data-aos="zoom-out-up"
                 >
                   <Card.Body className="d-flex flex-column align-items-center justify-content-center">
                     <img
@@ -99,6 +102,7 @@ const Header = () => {
                     backgroundImage:
                       "linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%)",
                   }}
+                  data-aos="zoom-out-left"
                 >
                   <Card.Body className="d-flex flex-column align-items-center justify-content-center">
                     <img

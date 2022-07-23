@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Header />
       <SellCard />
-      <Additional />
+
       <ThreeStep />
       <StandOut />
       <Contactus />

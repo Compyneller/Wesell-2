@@ -8,7 +8,7 @@ const Contactus = () => {
       <div className="w-100 p-3 contactusContainer">
         <Row className="g-3">
           <Col sm={12} lg={8}>
-            <div className="row">
+            <div className="row" data-aos="zoom-in" data-aos-delay={`150`}>
               <div className="col-3">
                 <img
                   src="https://img.icons8.com/clouds/344/new-post.png"
@@ -18,15 +18,12 @@ const Contactus = () => {
               </div>
               <div className="col-9 d-flex justify-content-center flex-column">
                 <h5>Email</h5>
-                <a
-                  href="mailto:
-wesellhelp.contact@gmail.com"
-                >
+                <a href="mailto:wesellhelp.contact@gmail.com">
                   wesellhelp.contact@gmail.com
                 </a>
               </div>
             </div>
-            <div className="row">
+            <div className="row" data-aos="zoom-in" data-aos-delay={`350`}>
               <div className="col-3">
                 <img
                   src="https://img.icons8.com/clouds/344/address.png"
@@ -44,7 +41,13 @@ wesellhelp.contact@gmail.com"
             </div>
           </Col>
           <Col sm={12} lg={4} className="d-flex align-items-center">
-            <img src={contactus} alt="" className="w-100" />
+            <img
+              src={contactus}
+              alt=""
+              className="w-100"
+              data-aos="zoom-in"
+              data-aos-delay={`550`}
+            />
           </Col>
         </Row>
       </div>

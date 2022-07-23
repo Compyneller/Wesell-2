@@ -2,7 +2,7 @@ import refur from "../assets/refur.png";
 import recycle from "../assets/recycle.png";
 import find from "../assets/find.png";
 import compare from "../assets/compare.png";
-import accessories from "../assets/accessories.png";
+import accessories from "../assets/earphone.png";
 import repair from "../assets/repair.png";
 
 export const AdditionalData = [

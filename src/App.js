@@ -14,8 +14,15 @@ import RefundPolicy from "./pages/RefundPolicy";
 import Term from "./pages/Term";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>

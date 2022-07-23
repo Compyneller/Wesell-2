@@ -1,5 +1,6 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { SellCards } from "../../config/SellCardData";
+import Additional from "./Additional";
 const SellCard = () => {
   console.log(SellCards);
   return (
@@ -18,15 +19,16 @@ const SellCard = () => {
                   <Card
                     className=" standCard d-flex flex-column align-items-center justify-content-center"
                     style={{ width: "100%", height: "100%" }}
+                    data-aos="zoom-in"
+                    data-aos-delay={`${index}50`}
                   >
-                    <Card.Body>
-                      <img
-                        src={items.img}
-                        style={{ height: "5vw", objectFit: "contain" }}
-                      />
-                      <br />
-                      <br />
-                      <p className="text-center" style={{ fontWeight: "bold" }}>
+                    <Card.Body className="d-flex flex-column align-items-center justify-content-center ">
+                      <img src={items.img} height={50} width={50} />
+
+                      <p
+                        className="text-center mt-2 m-auto"
+                        style={{ fontWeight: "bold" }}
+                      >
                         {items.text}
                       </p>
                     </Card.Body>
@@ -37,6 +39,7 @@ const SellCard = () => {
           })}
         </Row>
       </Container>
+      <Additional />
     </div>
   );
 };

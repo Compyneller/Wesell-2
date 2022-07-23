@@ -7,7 +7,7 @@ const StandOut = () => {
   return (
     <Container>
       <div className="standOutContainer w-100 p-3 text-center">
-        <h1>What Makes Us Stand Out</h1>
+        <h1 data-aos="zoom-out-down">What Makes Us Stand Out</h1>
 
         <br />
         <Row className="g-3">
@@ -16,7 +16,11 @@ const StandOut = () => {
               {StandOutData.map((items, index) => {
                 return (
                   <Col sm={6} lg={4} key={index}>
-                    <Card className="standCard">
+                    <Card
+                      className="standCard"
+                      data-aos="zoom-in"
+                      data-aos-delay={`${index}50`}
+                    >
                       <Card.Body>
                         <img src={items.img} height={50} alt="" />
                         <br />
@@ -30,7 +34,7 @@ const StandOut = () => {
             </Row>
           </Col>
           <Col sm={12} lg={6}>
-            <img src={stand} className="w-100" alt="" />
+            <img data-aos="zoom-out" src={stand} className="w-100" alt="" />
           </Col>
         </Row>
       </div>
