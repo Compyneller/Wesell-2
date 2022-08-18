@@ -10,7 +10,7 @@ const SignUp = () => {
             <div className="form-group mt-3">
               <label>Mobile Number</label>
               <input
-                type="email"
+                type="tel"
                 className="form-control mt-1"
                 placeholder="Enter Mobile Number"
               />
